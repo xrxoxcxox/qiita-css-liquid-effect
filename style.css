@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+.circlesWrapper {
+  background-color: #fff;
+  display: flex;
+  height: 100%;
+  filter: blur(10px) contrast(20);
+  margin: auto;
+  position: relative;
+  width: 100%;
+}
+
+.circle {
+  border-radius: 50%;
+  height: calc(100vh / 13);
+  position: absolute;
+  width: calc(100vh / 13);
+}
+
+.circleHorizontal {
+  background-color: #000;
+  border: calc(100vh / 13 / 2) solid #000;
+}
+
+.circleVertical {
+  border: calc(100vh / 13 / 2) solid #000;
+}
+
+@keyframes horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.circle1 {
+  animation: horizontal 5s ease-in-out infinite alternate both;
+  left: calc(100vh / 13 / -1);
+  top: calc(100vh / 13 * 0.5);
+}
+
+.circle2 {
+  animation: horizontal 5.5s ease-in-out infinite alternate-reverse both;
+  left: calc(100vh / 13 / -1);
+  top: calc(100vh / 13 * 2.5);
+}
+
+.circle3 {
+  animation: horizontal 6s ease-in-out infinite alternate both;
+  left: calc(100vh / 13 / -1);
+  top: calc(100vh / 13 * 4.5);
+}
+
+.circle4 {
+  animation: horizontal 6.5s ease-in-out infinite alternate-reverse both;
+  left: calc(100vh / 13 / -1);
+  top: calc(100vh / 13 * 6.5);
+}
+
+.circle5 {
+  animation: horizontal 7s ease-in-out infinite alternate both;
+  left: calc(100vh / 13 / -1);
+  top: calc(100vh / 13 * 8.5);
+}
+
+.circle6 {
+  animation: horizontal 7.5s ease-in-out infinite alternate-reverse both;
+  left: calc(100vh / 13 / -1);
+  top: calc(100vh / 13 * 10.5);
+}
+
+.circle7 {
+  animation: vertical 6s ease-in-out infinite alternate both;
+  left: calc(100vw / 13 * 1);
+  top: calc(100vh / 13 / -1);
+}
+
+.circle8 {
+  animation: vertical 6.5s ease-in-out infinite alternate-reverse both;
+  left: calc(100vw / 13 * 3);
+  top: calc(100vh / 13 / -1);
+}
+
+.circle9 {
+  animation: vertical 7s ease-in-out infinite alternate both;
+  left: calc(100vw / 13 * 5);
+  top: calc(100vh / 13 / -1);
+}
+
+.circle10 {
+  animation: vertical 7.5s ease-in-out infinite alternate-reverse both;
+  left: calc(100vw / 13 * 7);
+  top: calc(100vh / 13 / -1);
+}
+
+.circle11 {
+  animation: vertical 8s ease-in-out infinite alternate both;
+  left: calc(100vw / 13 * 9);
+  top: calc(100vh / 13 / -1);
+}
+
+.circle12 {
+  animation: vertical 8.5s ease-in-out infinite alternate-reverse both;
+  left: calc(100vw / 13 * 11);
+  top: calc(100vh / 13 / -1);
+}
+
+.cover {
+  content: "";
+  background-color: #55c500;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+}
